@@ -21,7 +21,15 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // メッセージ表示
+        self.nameLabel.text = "\(userName)さんの点数は..."
+
+        // スコア（乱数）
+        let score = arc4random_uniform(101)
+        
+        // スコア表示
+        self.scoreLabel.text = "\(score)点"
+        
     }
 
     override func didReceiveMemoryWarning() {
