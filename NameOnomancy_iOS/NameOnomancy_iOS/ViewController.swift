@@ -8,14 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     // テキストフィールド
+    @IBOutlet weak var sendButton: UIButton!
     @IBOutlet weak var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.textField.delegate = self
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -29,6 +30,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    ///　textFieldShouldReturn
+    ///
+    /// - Parameter textField: String
+    /// - Returns: transition ResultViewController
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.sendButton.sendActions(for: .touchUpInside)
+        return true
+    }
+    
+    /// エラーアラート
     func showAlert()
     {
         /* iOS7とiOS8のアラート出し分け */
