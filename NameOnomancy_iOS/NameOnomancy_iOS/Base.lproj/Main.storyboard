@@ -45,6 +45,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Name Onomancy" id="hR9-kJ-mFv"/>
+                    <connections>
+                        <outlet property="textField" destination="leI-cR-Lqg" id="LIZ-Ol-vYF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,6 +87,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Result" id="zMW-48-zTl"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="6nw-Lm-M6c" id="ffH-Le-9Ko"/>
+                        <outlet property="scoreLabel" destination="CYy-hF-tLL" id="fdj-RJ-xIo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjP-xG-gKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

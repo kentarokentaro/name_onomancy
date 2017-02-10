@@ -10,6 +10,14 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    // スコア
+    @IBOutlet weak var scoreLabel: UILabel!
+
+    // 名前
+    @IBOutlet weak var nameLabel: UILabel!
+
+    var userName: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
