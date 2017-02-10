@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		148447CC1E4D5770005BE68B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148447CB1E4D5770005BE68B /* ResultViewController.swift */; };
+		148447CD1E4D5770005BE68B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148447CB1E4D5770005BE68B /* ResultViewController.swift */; };
+		148447CE1E4D5770005BE68B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148447CB1E4D5770005BE68B /* ResultViewController.swift */; };
 		14A761791E4C6DDD003F3FE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A761781E4C6DDD003F3FE5 /* AppDelegate.swift */; };
 		14A7617B1E4C6DDD003F3FE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A7617A1E4C6DDD003F3FE5 /* ViewController.swift */; };
 		14A7617E1E4C6DDD003F3FE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14A7617C1E4C6DDD003F3FE5 /* Main.storyboard */; };
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		148447CB1E4D5770005BE68B /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		14A761751E4C6DDD003F3FE5 /* NameOnomancy_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NameOnomancy_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14A761781E4C6DDD003F3FE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14A7617A1E4C6DDD003F3FE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 			children = (
 				14A761781E4C6DDD003F3FE5 /* AppDelegate.swift */,
 				14A7617A1E4C6DDD003F3FE5 /* ViewController.swift */,
+				148447CB1E4D5770005BE68B /* ResultViewController.swift */,
 				14A7617C1E4C6DDD003F3FE5 /* Main.storyboard */,
 				14A7617F1E4C6DDD003F3FE5 /* Assets.xcassets */,
 				14A761811E4C6DDD003F3FE5 /* LaunchScreen.storyboard */,
@@ -261,6 +266,7 @@
 			files = (
 				14A7617B1E4C6DDD003F3FE5 /* ViewController.swift in Sources */,
 				14A761791E4C6DDD003F3FE5 /* AppDelegate.swift in Sources */,
+				148447CC1E4D5770005BE68B /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14A7618E1E4C6DDE003F3FE5 /* NameOnomancy_iOSTests.swift in Sources */,
+				148447CD1E4D5770005BE68B /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14A761991E4C6DDE003F3FE5 /* NameOnomancy_iOSUITests.swift in Sources */,
+				148447CE1E4D5770005BE68B /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -401,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -414,6 +422,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NameOnomancy_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.NameOnomancy-iOS";
@@ -426,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = NameOnomancy_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.test.NameOnomancy-iOS";
@@ -507,6 +517,7 @@
 				14A7619F1E4C6DDE003F3FE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14A761A01E4C6DDE003F3FE5 /* Build configuration list for PBXNativeTarget "NameOnomancy_iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +526,7 @@
 				14A761A21E4C6DDE003F3FE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14A761A31E4C6DDE003F3FE5 /* Build configuration list for PBXNativeTarget "NameOnomancy_iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +535,7 @@
 				14A761A51E4C6DDE003F3FE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

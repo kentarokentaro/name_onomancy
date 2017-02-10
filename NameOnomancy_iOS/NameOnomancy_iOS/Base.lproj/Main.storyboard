@@ -53,7 +53,7 @@
         <!--Result-->
         <scene sceneID="EGy-la-4Do">
             <objects>
-                <viewController id="Ner-rf-SNP" sceneMemberID="viewController">
+                <viewController id="Ner-rf-SNP" customClass="ResultViewController" customModule="NameOnomancy_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kd9-2v-tPq"/>
                         <viewControllerLayoutGuide type="bottom" id="iz7-vg-Lf3"/>
