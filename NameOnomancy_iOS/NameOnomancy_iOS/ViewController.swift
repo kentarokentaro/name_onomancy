@@ -23,11 +23,32 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    // 
+    func showAlert()
+    {
+        /* iOS7とiOS8のアラート出し分け */
+        let VERSION: Float = (UIDevice.current.systemVersion as NSString).floatValue
+        if VERSION >= 8.0 {
+            let alertController = UIAlertController(title: "Error", message: "Please enter your name", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+        else {
+            let alert = UIAlertView()
+            alert.title = "Error"
+            alert.message = "Please enter your name"
+            alert.addButton(withTitle: "OK")
+            alert.show()
+        }
+    }
+    
+// MARK: SEGUE
+    // segueの実行条件を確認するメソッド（実装しなければsegueがそのまま実行される）
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == "showResult" {
             // テキストフィールドの文字が空の場合
             if textField.text == "" {
+                self.showAlert()
                 return false
             }
             else {
