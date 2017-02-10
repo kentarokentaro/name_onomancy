@@ -22,14 +22,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="leI-cR-Lqg">
-                                <rect key="frame" x="10" y="114" width="299" height="30"/>
+                                <rect key="frame" x="10" y="114" width="311" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1n-39-mhc">
-                                <rect key="frame" x="319" y="114" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="331" y="114" width="34" height="30"/>
+                                <state key="normal" title="send"/>
+                                <connections>
+                                    <segue destination="Ner-rf-SNP" kind="show" identifier="showResult" id="eS0-Qu-bqH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -46,6 +49,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="860" y="138.98050974512745"/>
+        </scene>
+        <!--Result-->
+        <scene sceneID="EGy-la-4Do">
+            <objects>
+                <viewController id="Ner-rf-SNP" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kd9-2v-tPq"/>
+                        <viewControllerLayoutGuide type="bottom" id="iz7-vg-Lf3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jtn-yv-fqe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Name's socore is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nw-Lm-M6c">
+                                <rect key="frame" x="102.5" y="249" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYy-hF-tLL">
+                                <rect key="frame" x="102" y="295" width="171" height="77"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="64"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6nw-Lm-M6c" firstAttribute="centerX" secondItem="jtn-yv-fqe" secondAttribute="centerX" id="Bwc-6f-FFQ"/>
+                            <constraint firstItem="CYy-hF-tLL" firstAttribute="centerX" secondItem="jtn-yv-fqe" secondAttribute="centerX" id="FYa-hW-VyL"/>
+                            <constraint firstItem="CYy-hF-tLL" firstAttribute="centerY" secondItem="jtn-yv-fqe" secondAttribute="centerY" id="Z7z-7l-2jM"/>
+                            <constraint firstItem="CYy-hF-tLL" firstAttribute="top" secondItem="6nw-Lm-M6c" secondAttribute="bottom" constant="25" id="izM-Xn-Yee"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Result" id="zMW-48-zTl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cjP-xG-gKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1567" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aqg-HN-AME">
