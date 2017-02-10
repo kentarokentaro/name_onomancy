@@ -72,6 +72,8 @@ class ViewController: UIViewController {
             let resultViewController: ResultViewController = segue.destination as! ResultViewController
             // テキストフィールドの文字列を渡す
             resultViewController.userName = textField.text!
+            // 遷移時にテキストフィールドをしまう
+            self.textField.resignFirstResponder()
         }
     }
 
