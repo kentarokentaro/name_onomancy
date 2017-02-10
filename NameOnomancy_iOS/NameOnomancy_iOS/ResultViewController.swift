@@ -21,6 +21,12 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //レイアウト設定
+        self.nameLabel.layer.masksToBounds = true
+        self.scoreLabel.layer.masksToBounds = true
+        self.nameLabel.layer.cornerRadius = 10
+        self.scoreLabel.layer.cornerRadius = self.scoreLabel.bounds.width / 2
+        
         // メッセージ表示
         self.nameLabel.text = "\(userName)さんの点数は..."
 
